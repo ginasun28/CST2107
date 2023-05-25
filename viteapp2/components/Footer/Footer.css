@@ -1,0 +1,51 @@
+.fnav-container-1 {
+    margin: 0;
+    list-style-type: none;
+    padding: 20px 40px;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.fnav-container-2 {
+    list-style-type: none;
+    gap: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quick-links {
+    color: #424242;
+    margin: 5px 10px;
+    font-size: 15px;
+}
+
+.fnav-item {
+    font-size: 15px;
+    color: #3E2723;
+    padding: 15px 10px;
+}
+
+.fnav-item:hover {
+    background-color: #FFAB91;
+    /* cursor 可以指定當滑鼠指標指向哪個物件時，顯示不同的游標. */
+    cursor: pointer;
+}
+
+.facebook, .instagram, .twitter, .github {
+    width: 30px;
+    height: 30px;
+}
+
+hr {
+    width: 1400px;
+}
+
+.copyright {
+    margin: 0;
+    padding: 15px 10px;
+    list-style-type: none;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}

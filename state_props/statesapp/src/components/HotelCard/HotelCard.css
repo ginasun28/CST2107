@@ -1,0 +1,13 @@
+.card-container {
+    background-color: #FFF3E0;
+    border-radius: 20px;
+    box-shadow: rgba(239, 235, 233, 1);
+}
+
+.card-body {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
