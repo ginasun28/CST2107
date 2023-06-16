@@ -18,7 +18,6 @@ export default function FlagsTable({ data }) {
                         return (
                             // eslint-disable-next-line react/jsx-key
                             <Grid item xs={2} sm={5} md={3}>
-
                                 <Card sx={{ maxWidth: 300, boxShadow: 'rgba(0, 0, 0, 0.24) 10px 3px 8px;' }} >
                                     <CardMedia
                                         component="img"

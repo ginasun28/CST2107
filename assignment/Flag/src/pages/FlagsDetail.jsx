@@ -1,8 +1,7 @@
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Container, Grid, Typography, Button } from '@mui/material';
 import { Image } from 'mui-image'
-import Icon from '@mui/material/Icon';
 import '../componets/FlagsDetail.css'
 
 
