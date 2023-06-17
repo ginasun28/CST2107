@@ -1,6 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,700&family=Noto+Sans:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+
 .photo-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     align-items: center;
-  }
+}
+
+body {
+  margin: 0;
+}
+
+.favorite-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  align-items: center;
+}
+.favorite-title {
+  color: #D32F2F;
+  font-family: 'Roboto';
+  font-weight: 900 !important;
+  font-size: 30px !important;
+  padding-top: 40px !important;
+  padding-left: 40px !important;
+}
+
+a {
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #311B92 !important;
+  font-family: "Noto+Sans";
+  font-weight: 600;
+  font-size: 15px;
+}
+
+a.nav-link:hover {
+  cursor: pointer;
+  color: #512DA8 !important;
+  text-decoration: underline;
+}
+
+.btn {
+  font-weight: 400;
+  font-family: 'Kanit';
+  text-transform: none !important;
+  border: dotted 2px #FFCCBC !important;
+}
+
+/* .btn:hover {
+  background-color: #FF5722 !important;
+  color: #FBE9E7 !important;
+} */

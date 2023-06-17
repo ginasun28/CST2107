@@ -1,12 +1,14 @@
-import PhotosListContainer from '../components/PhotoListContainer';
-// import { AppBar, Container, Typography, Toolbar } from '@mui/material';
-// import AdbIcon from '@mui/icons-material/Adb';
+import PhotosList from '../components/PhotoList';
+
+import '../components/styles.css'
+
+
 
 const HomePage = () => {
     return (
         <>
-           
-            <PhotosListContainer />
+
+            <PhotosList />
 
         </>
     )

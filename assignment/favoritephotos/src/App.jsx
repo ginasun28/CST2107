@@ -1,28 +1,61 @@
-import { useRoutes } from 'react-router-dom';
-import './App.css'
-import HomePage from './pages/HomePage';
+import NavBar from './components/NavBar';
+import PhotoContext from './context/PhotoContext'
+import { useEffect, useState } from 'react';
+// import NavBar from '../components/Navbar';
 import FavoritePage from './pages/FavoritePage';
-import NotFoundPage from './pages/NotFoundPage';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from './pages/HomePage';
 
 
 function App() {
 
-  let element = useRoutes([
-    {
-      path:'/',
-      element: <HomePage />
-    },
-    {
-      path: '/favorite',
-      element: <FavoritePage />
-    },
-    {
-      path:'*',
-      element: <NotFoundPage />
-    }
-  ]);
+  const CLIENT_SECRET = `7HMGMNCo7ui6RPwS3h8ziMWz_y4Dm3DgmcdvW7AxoYo`;
+  const [photosData, setPhotosData] = useState([]);
 
-  return element; // return page
+  useEffect(() => {
+    getPhotosFromSplash();
+  }, []);
+
+  const getPhotosFromSplash = async () => {
+    const photoDataPromise = await fetch(
+      `https://api.unsplash.com/photos/?client_id=${CLIENT_SECRET}`
+    );
+    const photoJsonData = await photoDataPromise.json();
+    const requiredData = photoJsonData.map((data) => {
+      return {
+        image: data.urls.full,
+        description: data.alt_description,
+        isFavorite: false,
+        id: data.id,
+      };
+    });
+    setPhotosData(requiredData);
+  };
+
+
+  return (
+    <>
+      <Router>
+        <NavBar />
+        <PhotoContext.Provider
+          value={{
+            photosData,
+            setPhotosData,
+          }}
+        >
+          <Routes>
+            <Route path='/' element={<HomePage />} >
+            </Route>
+            <Route path="/favorite" element={< FavoritePage />} >
+            </Route>
+          </Routes>
+        </PhotoContext.Provider>
+      </Router>
+      
+    </>
+
+  );
+
 }
 
 export default App

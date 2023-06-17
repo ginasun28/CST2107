@@ -10,7 +10,12 @@ const PhotoList = () => {
     <div className="photo-container">
       {photosData.map((data) => {
         // eslint-disable-next-line react/jsx-key
-        return <PhotoCard data={data} />;
+        return (
+          <>
+            <PhotoCard data={data} />
+          </>
+        )
+        
       })}
     </div>
   );
