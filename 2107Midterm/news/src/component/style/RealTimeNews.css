@@ -1,0 +1,93 @@
+.real-time1 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    font-family: 'Noto Sans' !important;
+    color: #ECC5C0;
+    background-color: red;
+    text-align: center;
+}
+
+.real-time2 {
+font-size: 20px !important;
+font-weight: 500 !important;
+font-family: 'Noto Sans' !important;
+color: #F0FFFF;
+background-color: red;
+text-align: center;
+}
+
+.real-time3 {
+font-size: 20px !important;
+font-weight: 500 !important;
+font-family: 'Noto Sans' !important;
+color: #D1D0CE;
+background-color: red;
+text-align: center;
+}
+
+.real-time4 {
+font-size: 20px !important;
+font-weight: 500 !important;
+font-family: 'Noto Sans' !important;
+color: #8EEBEC;
+background-color: red;
+text-align: center;
+}
+
+.realtime-card-title {
+    font-size: 15px !important;
+    font-family: 'Newsreader' !important;
+    font-weight: 600 !important;
+    color: #151B54 !important;
+}
+
+.realtime-card-section {
+    color: rgba(94, 125, 126, 0.5) !important;
+    text-transform: capitalize;
+    font-family: 'Roboto' !important;
+    font-weight: 600 !important;
+    padding-bottom: 5px;
+    font-size: 12px !important;
+}
+
+.realtime-card {
+    width: 300px;
+    height: 320px;
+    
+  }
+  
+.realtime-img {
+    width: 50px;
+    height: 150px;
+    image-rendering: smooth;
+}
+
+.realtime-readmore {
+    text-decoration: none !important;
+}
+
+.realtime-readmore-btn {
+    color: #15317E !important;
+    border-radius: 5px !important;
+}
+
+.realtime-readmore-btn:hover {
+    /* background-color: transparent !important; */
+    background-color: #82CAFA !important;
+    /* color: #38ACEC !important;  */
+}
+
+
+@media (max-width: 768px) {
+.real-time1, .real-time2, .real-time3, .real-time4 {
+    font-size: 16px !important;
+}
+.realtime-card {
+    width: 250px !important;
+    height: 255px !important;
+}
+.realtime-img {
+    width: 250px !important;
+    height: 120px !important;
+}
+}
