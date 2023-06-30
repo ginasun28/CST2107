@@ -1,0 +1,194 @@
+/* top news */
+.topnews-title {
+  position: relative;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #8e0e00 10%, #1f1c18 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  top: 30px;
+  left: 50px;
+  font-size: 45px !important;
+  font-family: 'Josefin Sans' !important;
+  font-weight: 700 !important;
+  margin-bottom: 50px !important;
+  display: inline-block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.newscontainer-card-subsection, 
+.newscontainer-card-section {
+  color: rgba(94, 125, 126, 0.5) !important;
+  text-transform: capitalize;
+  font-family: 'Roboto' !important;
+  font-weight: 600 !important;
+  padding-bottom: 5px;
+}
+
+.news-link {
+  color: #151B54 !important;
+  font-family: 'Bitter';
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: justify;
+  text-justify: inter-word;
+  
+}
+  
+.news-link:hover {
+  text-decoration: underline dashed #151B54;
+}
+
+.news-description{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
+.news-byline {
+  color: #B6B6B4;
+  padding: 5px 8px; 
+}
+
+.news-published-date {
+  color: #B6B6B4;
+  position: relative;
+  top: 20px;
+  left: -20px;
+  text-align: right;
+}
+
+.news-loadmore, .science-loadmore {
+  align-self: center !important;
+  background-color: #fff !important;
+  background-image: none !important;
+  background-position: 0 90% !important;
+  background-repeat: repeat no-repeat !important;
+  background-size: 4px 3px !important;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px !important;
+  border-style: solid !important;
+  border-width: 2px !important;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px !important;
+  box-sizing: border-box !important;
+  color: #41403e !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  font-family: 'Neucha', 'sans-serif' !important;
+  font-size: 1rem !important;
+  line-height: 23px !important;
+  outline: none !important;
+  padding: .75rem !important;
+  text-decoration: none !important;
+  transition: all 235ms ease-in-out !important;
+  border-bottom-left-radius: 15px 255px !important;
+  border-bottom-right-radius: 225px 15px !important;
+  border-top-left-radius: 255px 15px !important;
+  border-top-right-radius: 15px 225px !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+}
+
+.news-loadmore:hover, .science-loadmore:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px !important;
+  transform: translate3d(0, 2px, 0) !important;
+}
+
+.news-loadmore:hover, .science-loadmore:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px !important;
+}
+
+/* science */
+.science-title {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+  background: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  top: 30px;
+  left: 50px;
+  font-size: 45px !important;
+  font-family: 'Josefin Sans' !important;
+  font-weight: 700 !important;
+  margin-bottom: 50px !important;
+  display: inline-block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+.newscontainer-science-link {
+  color: #151B54 !important;
+  font-size: 18px;
+  text-align: justify;
+  font-family: 'Bitter';
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.newscontainer-science-link:hover {
+  text-decoration: underline dashed #151B54;
+}
+
+.science-subtitle {
+  font-size: 13px !important;
+  padding-top: 5px;
+}
+
+.science-byline {
+  font-size: 13px !important;
+  color: #B6B6B4;
+}
+
+.science-published-date {
+  font-size: 13px !important;
+  color: #B6B6B4;
+  position: relative;
+  top: 10px;
+  text-align: right;
+}
+
+.button-8 {
+  background-color: #FDD7E4 !important;
+  border-radius: 3px !important;
+  border: 1px solid #9F000F !important;
+  box-shadow: rgba(232, 173, 170, 1) 0 2px 5px 0px inset !important;
+  box-sizing: border-box !important;
+  color:  #C11B17 !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif !important;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 0;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #8C001A !important;
+  color: #ECC5C0 !important;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15) !important;
+}
+
+.button-8:active {
+  background-color: #a0c7e4 !important;
+  box-shadow: none !important;
+  color: #2c5777 !important;
+}

@@ -9,6 +9,7 @@ const FlagsDetail = () => {
     const { countryName } = useParams(); // fecth address name
     console.log(countryName);
 
+
     const [countryData, setCountryData] = useState([]);
 
     useEffect(() => {
