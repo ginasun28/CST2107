@@ -4,10 +4,10 @@ import {useEffect, useState} from "react";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./component/Header";
-import NewsCollection from "./pages/NewsCollection";
+import Collection from "./pages/Collection";
 import './component/style/styles.css';
-import NewsContent from "./pages/NewsContent";
-import ScienceContent from "./pages/ScienceContent";
+import News from "./pages/News";
+import Science from "./pages/Science";
 import NotFound from "./pages/NotFound";
 
 function App() {
@@ -28,18 +28,18 @@ function App() {
 			const response = await fetch(
 				`https://api.nytimes.com/svc/topstories/v2/us.json?api-key=${TNKEY}`
 			);
-			const data = await response.json();
-			const requiredData = data.results.map(news => ({
-				image: news.multimedia[1].url,
-				description: news.abstract,
+			const newsJsonData = await response.json();
+			const requiredData = newsJsonData.results.map(data => ({
+				image: data.multimedia[1].url,
+				description: data.abstract,
 				isCollect: false,
-				id: uuidv4(), // Generate a unique ID for each news
-				publishedDate: news.published_date, // Add the published date to the news object
-				url: news.url,
-				title: news.title,
-				byline: news.byline,
-				type: news.section,
-				subsection: news.subsection
+				id: uuidv4(), // Generate a unique ID for each data
+				publishedDate: data.published_date, // Add the published date to the data object
+				url: data.url,
+				title: data.title,
+				byline: data.byline,
+				// type: data.section,
+				type: data.subsection
 			}));
 
 			// Sort the articles by published date in descending order
@@ -58,19 +58,19 @@ function App() {
 			const response = await fetch(
 				`https://api.nytimes.com/svc/topstories/v2/science.json?api-key=${TNKEY}`
 			);
-			const data = await response.json();
-			const requiredData = data.results.map(article => {
-				const image = article.multimedia?.[1]?.url || ""; // Access the first multimedia element if available
+			const scienceJsonData = await response.json();
+			const requiredData = scienceJsonData.results.map(data => {
+				const image = data.multimedia?.[1]?.url || ""; // Access the first multimedia element if available
 				return {
 					image,
-					description: article.abstract,
+					description: data.abstract,
 					isCollect: false,
-					id: uuidv4(), // Generate a unique ID for each article
-					publishedDate: article.published_date,
-					url: article.url,
-					title: article.title,
-					byline: article.byline,
-					section: article.section,
+					id: uuidv4(), // Generate a unique ID for each data
+					publishedDate: data.published_date,
+					url: data.url,
+					title: data.title,
+					byline: data.byline,
+					type: data.section,
 					
 				};
 			});
@@ -134,9 +134,9 @@ function App() {
 				>
 					<Routes>
 						<Route path="/" element={<Home />}></Route>
-						<Route path="/collection" element={<NewsCollection />}></Route>
-						<Route path="/news" element={<NewsContent />}></Route>
-						<Route path="/science" element={<ScienceContent />}></Route>
+						<Route path="/collection" element={<Collection />}></Route>
+						<Route path="/news" element={<News />}></Route>
+						<Route path="/science" element={<Science />}></Route>
 						<Route path="*" element={<NotFound />} />
 					</Routes>
 				</NewsContext.Provider>

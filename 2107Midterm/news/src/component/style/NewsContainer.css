@@ -192,3 +192,27 @@
   box-shadow: none !important;
   color: #2c5777 !important;
 }
+
+.topnews-title {
+  position: relative;
+  margin-bottom: 50px;
+  background: linear-gradient(to right, #8e0e00 10%, #1f1c18 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  top: 30px;
+  left: 50px;
+  font-size: 45px !important;
+  font-family: 'Josefin Sans' !important;
+  font-weight: 700 !important;
+  margin-bottom: 50px !important;
+  display: inline-block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 375px) {
+  .topnews-title {
+    
+  }
+}

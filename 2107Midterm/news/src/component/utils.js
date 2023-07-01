@@ -1,5 +1,5 @@
 
-
+// Check time 
 const timeAgo = (dateString) => {
     const date = new Date(dateString);
     const now = new Date();

@@ -36,6 +36,16 @@
         padding: 20px !important;
         position: relative;
         left: -160px;
+    }
+
 }
+
+@media (max-width: 375px) {
+    .banner-title {
+        font-size: 40px !important;
+        padding: 10px !important;
+        position: relative;
+        left: -200px;
+    }
 
 }
