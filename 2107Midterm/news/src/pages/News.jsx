@@ -1,6 +1,6 @@
 import {useContext, useState} from "react";
 import NewsContext from "../context/NewsContext";
-import {Box, Typography, Grid} from "@mui/material";
+import {Box, Typography, Grid, Divider} from "@mui/material";
 import Content from "../component/Content";
 
 const News = () => {
@@ -34,6 +34,7 @@ const News = () => {
 				<Typography variant="h2" className="usnews-title">
 					US News
 				</Typography>
+				<Divider sx={{width: 'auto', margin: '-5px 20px 15px 20px'}}/>
 				<Grid container spacing={2}>
 					{newsData.map(article => (
 						<Grid item xs={12} sm={6} md={4} key={article.id}>

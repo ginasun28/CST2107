@@ -10,6 +10,7 @@ import {
 	CardContent,
 	CardMedia,
 	Button,
+	Divider,
 } from "@mui/material";
 import "../component/style/NewsContainer.css";
 
@@ -109,6 +110,7 @@ const NewsContainer = () => {
 					</Button>
 				</Box>
 			</Box>
+			<Divider sx={{width: 'auto', margin: '0px 20px'}}/>
 			{/* Science */}
 			<Typography variant="h2" className="science-title">
 				Science

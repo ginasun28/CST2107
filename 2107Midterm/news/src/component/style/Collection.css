@@ -3,7 +3,7 @@
     /* text-shadow: 2px 2px #B2BABB; */
     padding-top:40px;
     padding-left: 30px;
-    padding-bottom: 10px;
+    /* padding-bottom: 10px; */
     position: relative;
     left: 60px;
     font-size: 45px !important;
@@ -45,13 +45,14 @@
 .sectioon-title {
   position: relative;
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   background: linear-gradient(to right, #03001e 2%, #7303c0 2%, #ec38bc 8%, #fdeff9 10%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-  top: 30px;
+  top: 15px;
   left: 45px;
+  padding-top: 10px;
   font-size: 28px !important;
   font-family: 'Josefin Sans' !important;
   font-weight: 700 !important;
